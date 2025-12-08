@@ -2,7 +2,7 @@
 
 ## Description
 
-The **formexecCommand** handler is vulnerable to buffer overflow due to the complete absence of user input sanitization on parameter **cmdinput** which can lead of corruption of data on the stack, hijacking of control flow, and DoS.
+The **formexecCommand** handler is vulnerable to buffer overflow due to the complete absence of user input sanitization on parameter **cmdinput** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
 
 ## Details
 
@@ -32,5 +32,3 @@ curl -X POST http://172.16.182.130/goform/exeCommand   -d "cmdinput=$(python3 -c
 ```
 
 ![PoC](../resources/imgs/Tenda/execCommand.png)
-
-
