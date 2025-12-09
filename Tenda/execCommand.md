@@ -2,7 +2,7 @@
 
 ## Description
 
-The **formexecCommand** handler is vulnerable to buffer overflow due to the complete absence of user input sanitization on parameter **cmdinput** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
+The **formexeCommand** handler is vulnerable to buffer overflow due to the complete absence of user input sanitization on parameter **cmdinput** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
 
 ## Details
 
@@ -14,7 +14,7 @@ The **formexecCommand** handler is vulnerable to buffer overflow due to the comp
 
 *   **Firmware Download**: https://www.tendacn.com/material/show/104888
 
-*   **Component**: `/goform/execCommand` (formexecCommand handler)
+*   **Component**: `/goform/exeCommand` (formexeCommand handler)
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
@@ -29,7 +29,7 @@ The vulnerability is in the `strcpy()` call with no bounds checking.
 
 ![Vulnerable Function](../resources/imgs/Tenda/execCommandFn.png)
 
-Send a POST request to the `/goform/execCommand` endpoint to trigger the buffer overflow
+Send a POST request to the `/goform/exeCommand` endpoint to trigger the buffer overflow
 
 ```
 curl -X POST http://172.16.182.130/goform/exeCommand -d "cmdinput=$(python3 -c 'print("A"*600)')"
