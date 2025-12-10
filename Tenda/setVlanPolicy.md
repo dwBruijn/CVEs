@@ -1,4 +1,4 @@
-# Tenda M3 formSetVlanPolicy Heap Overflow
+# Tenda M3 setVlanPolicy Heap Overflow
 
 ## Description
 
