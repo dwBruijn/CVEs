@@ -31,7 +31,7 @@ Here we can see the request params being parsed by the handler. Notice param **q
 
 ![Vulnerable Function](../resources/imgs/Tenda/setVlanPolicyParams.png)
 
-And further down we can the **qvlan_truck_port** referenced as `local_3c` used in the vulnerable `memcpy()` call
+And further down we can the **qvlan_truck_port** referenced as `local_3c` used in the vulnerable `memcpy()` call and being copied into `_dest_00` which points to `local_14` which in turn points to a heap block being allocated by the `malloc()` call just above.
 
 ![Vulnerable Function](../resources/imgs/Tenda/setVlanPolicyMemcpy.png)
 
