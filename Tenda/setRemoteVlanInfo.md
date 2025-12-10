@@ -2,7 +2,7 @@
 
 ## Description
 
-The **formSetVlanInfo** handler in `/bin/httpd` calls **formSetRemoteVlanInfo** (under certain conditions) which is vulnerable to multiple stack overflows due to the complete absence of user input sanitization and bounds checking on parameters **ID**, **vlan**, and **port** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
+The **formSetVlanInfo** handler in `/bin/httpd` calls **formSetRemoteVlanInfo** (under certain conditions) which is vulnerable to multiple stack overflows due to the complete absence of user input sanitization and bounds checking on parameters **ID**, **vlan**, and **port** which can lead to corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
 
 ## Details
 
@@ -44,7 +44,7 @@ So we need the following:
 ✅ 4. devUid format: devUid=IP:PORT;  
 ✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)  
 
-Now we ca send a POST request to the `/goform/setVlanInfo` endpoint to trigger the stack overflow in `etRemoteVlanInfo`
+Now we ca send a POST request to the `/goform/setVlanInfo` endpoint to trigger the stack overflow in `formSetRemoteVlanInfo`
 
 ```
 curl -X POST http://172.16.182.130/goform/setVlanInfo  -H "Cookie: devUid=172.16.182.130:80;" -d "ID=$(python3 -c 'print("A"*10000)')" -d "action=test" -d "vlan=1" -d "port=1"

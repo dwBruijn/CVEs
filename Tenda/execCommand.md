@@ -2,7 +2,7 @@
 
 ## Description
 
-The **formexeCommand** handler in `/bin/httpd` is vulnerable to buffer overflow due to the complete absence of user input sanitization on parameter **cmdinput** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
+The **formexeCommand** handler in `/bin/httpd` is vulnerable to buffer overflow due to the complete absence of user input sanitization and bounds checking on parameter **cmdinput** which can lead to corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
 
 ## Details
 

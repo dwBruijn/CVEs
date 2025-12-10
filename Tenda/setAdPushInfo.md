@@ -2,7 +2,7 @@
 
 ## Description
 
-The **formSetAdPushInfo** handler in `/bin/httpd` is vulnerable to a stack overflow due to the complete absence of user input sanitization and bounds checking on parameter **mac** and **terminal** which can lead of corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
+The **formSetAdPushInfo** handler in `/bin/httpd` is vulnerable to a stack overflow due to the complete absence of user input sanitization and bounds checking on parameter **mac** and **terminal** which can lead to corruption of data on the stack, hijacking of control flow, and DoS. The attack can be performed remotely.
 
 ## Details
 
