@@ -1,4 +1,4 @@
-# Tenda M3 formSetIRemoteInternetLanInfo Heap Overflow
+# Tenda M3 formSetRemoteInternetLanInfo Heap Overflow
 
 ## Description
 
