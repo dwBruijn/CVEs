@@ -33,7 +33,7 @@ Let's examine `formSetVlanInfo` and see how `formSetRemoteVlanInfo` is called
 
 ![Parent Funciton](../resources/imgs/Tenda/SetRemoteVlanInfoParentFn.png)
 
-As we can see, we need `FUN_0005668` to return 0, so let's examine that function
+As we can see, we need `FUN_00056668` to return 0, so let's examine that function
 
 ![Remote Detection Funciton](../resources/imgs/Tenda/setRemoteVlanInfoDetectRemoteFn.png)
 
@@ -44,7 +44,7 @@ So we need the following:
 ✅ 4. devUid format: devUid=IP:PORT;  
 ✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)  
 
-Now we ca send a POST request to the `/goform/setVlanInfo` endpoint to trigger the stack overflow in `formSetRemoteVlanInfo`
+Now we ca send a POST request to the `/goform/setVlanInfo` endpoint to trigger the stack overflow in `etRemoteVlanInfo`
 
 ```
 curl -X POST http://172.16.182.130/goform/setVlanInfo  -H "Cookie: devUid=172.16.182.130:80;" -d "ID=$(python3 -c 'print("A"*10000)')" -d "action=test" -d "vlan=1" -d "port=1"
