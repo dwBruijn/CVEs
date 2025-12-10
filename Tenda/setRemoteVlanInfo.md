@@ -37,12 +37,12 @@ As we can see, we need `FUN_0005668` to return 0, so let's examine that function
 
 ![Remote Detection Funciton](../resources/imgs/Tenda/setRemoteVlanInfoDetectRemoteFn.png)
 
-So we need the following:
-✅ 1. Router configured with `ac.workmode=master` (can be set through `/bin/cfm`, or simply patch `/bin/httpd` if you're feeling lazy)
-✅ 2. HTTP request includes Cookie header
-✅ 3. Cookie contains devUid parameter
-✅ 4. devUid format: devUid=IP:PORT;
-✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)
+So we need the following:  
+✅ 1. Router configured with `ac.workmode=master` (can be set through `/bin/cfm`, or simply patch `/bin/httpd` if you're feeling lazy)  
+✅ 2. HTTP request includes Cookie header  
+✅ 3. Cookie contains devUid parameter  
+✅ 4. devUid format: devUid=IP:PORT;  
+✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)  
 
 Now we ca send a POST request to the `/goform/setVlanInfo` endpoint to trigger the stack overflow in `setRemoteVlanInfo`
 
