@@ -25,9 +25,15 @@ The **formSetVlanPolicy** handler in `/bin/httpd` is vulnerable to heap overflow
 
 ## PoC
 
-The vulnerability is in the `memcpy()` call (highlighted below) performed using parameter **qvlan_truck_data** controlled by the user with no bounds checking.
+The vulnerability is in the `memcpy()` call (highlighted below) performed using parameter **qvlan_truck_port** controlled by the user with no bounds checking.
 
-![Vulnerable Function](../resources/imgs/Tenda/setVlanPolicyFn.png)
+Here we can see the request params being parsed by the handler. Notice param **qvlan_truck_port** being referenced as `local_3c`
+
+![Vulnerable Function](../resources/imgs/Tenda/setVlanPolicyParams.png)
+
+And further down we can the **qvlan_truck_port** referenced as `local_3c` used in the vulnerable `memcpy()` call
+
+![Vulnerable Function](../resources/imgs/Tenda/setVlanPolicyMemcpy.png)
 
 Send a POST request to the `/goform/setVlanPolicyData` endpoint to trigger the heap overflow in `formSetVlanPolicy`
 
