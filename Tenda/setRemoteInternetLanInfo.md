@@ -16,7 +16,7 @@ The **formSetInternetLanInfo** handler in `/bin/httpd` calls **formSetRemoteInte
 
 *   **Component**: `/goform/setInternetLanInfo` (formSetInternetLanInfo handler -> formSetRemoteInternetLanInfo())
 
-*   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
+*   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
 *   **CVE ID**: Not Assigned
 

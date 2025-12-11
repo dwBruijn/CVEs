@@ -16,7 +16,7 @@ The **formSetVlanPolicy** handler in `/bin/httpd` is vulnerable to heap overflow
 
 *   **Component**: `/goform/setVlanPolicyData` (formSetVlanPolicy handler)
 
-*   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
+*   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
 *   **CVE ID**: Not Assigned
 
