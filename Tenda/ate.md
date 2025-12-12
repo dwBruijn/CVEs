@@ -2,7 +2,7 @@
 
 ## Description
 
-Tenda's **ate** service (`/bin/ate`) which runs on port 7329 is vulnerable to unauthenticated command injeciton using a crafted UDP packet. The **ate** service can be enabled by a remote attacker on demand via endpoint `/goform/ate` in `/bin/httpd`.
+Tenda's **ate** service (`/bin/ate`) which runs on port 7329 is vulnerable to unauthenticated command injection using a crafted UDP packet. The **ate** service can be enabled by a remote attacker on demand via endpoint `/goform/ate` in `/bin/httpd`.
 
 ## Details
 
