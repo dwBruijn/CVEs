@@ -2,7 +2,7 @@
 
 ## Description
 
-The **R7websSsecurityHandler** component is vulnerable to a pre-authentication stack overflow via the cookie header which allows a remote attacker to hijack execution flow or cause DoS.
+The **R7websSsecurityHandler** component in `/bin/httpd` is vulnerable to a pre-authentication stack overflow via the cookie header which allows a remote attacker to hijack execution flow or cause DoS.
 
 ## Details
 
