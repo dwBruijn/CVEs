@@ -18,7 +18,7 @@ The **formSetDhcpForAp** handler in `/bin/httpd` calls **formSetRemoteDhcpForAp*
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 

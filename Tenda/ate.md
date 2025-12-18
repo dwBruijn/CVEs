@@ -20,7 +20,7 @@ Tenda's **ate** service (`/bin/ate`) which runs on port 7329 is vulnerable to un
 
 *   **Vulnerability Type**: OS Command Injection (CWE-78)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 

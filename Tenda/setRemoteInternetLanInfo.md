@@ -18,7 +18,7 @@ The **formSetInternetLanInfo** handler in `/bin/httpd` calls **formSetRemoteInte
 
 *   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 

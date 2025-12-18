@@ -18,7 +18,7 @@ The **formSetAdInfoDetail** handler in `/bin/httpd` is vulnerable to multiple he
 
 *   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 

@@ -19,7 +19,7 @@ The **R7websSsecurityHandler** component in `/bin/httpd` is vulnerable to a pre-
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 
