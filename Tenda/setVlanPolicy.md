@@ -18,7 +18,7 @@ The **formSetVlanPolicy** handler in `/bin/httpd` is vulnerable to heap overflow
 
 *   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15230
 
 *   **Reported by**: Charbel
 

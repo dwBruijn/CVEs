@@ -18,7 +18,7 @@ The **formSetAdPushInfo** handler in `/bin/httpd` is vulnerable to multiple stac
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15232
 
 *   **Reported by**: Charbel
 

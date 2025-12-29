@@ -18,7 +18,7 @@ The **formSetVlanInfo** handler in `/bin/httpd` calls **formSetRemoteVlanInfo** 
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15231
 
 *   **Reported by**: Charbel
 

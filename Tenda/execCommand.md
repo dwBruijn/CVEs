@@ -18,7 +18,7 @@ The **formexeCommand** handler in `/bin/httpd` is vulnerable to buffer overflow 
 
 *   **Vulnerability Type**: Buffer Overflow (CWE-120) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15253
 
 *   **Reported by**: Charbel
 

