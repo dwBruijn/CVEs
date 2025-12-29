@@ -1,4 +1,4 @@
-# Tenda WS-6 Pre-authentication Remote Code Execution via OS Command Injection
+# Tenda W6-S Pre-authentication Remote Code Execution via OS Command Injection
 
 ## Description
 
@@ -8,7 +8,7 @@ Tenda's **ate** service (`/bin/ate`) which runs on port 7329 is vulnerable to un
 
 *   **Vendor**: Tenda
 
-*   **Product**: Tenda WS-6
+*   **Product**: Tenda W6-S
 
 *   **Firmware Version**: V1.0.0.4(510)
 
