@@ -187,7 +187,7 @@ src/hpack-dec.c:77:36: runtime error: shift exponent 35 is too large for 32-bit 
 
 ## Potential Impact
 
-Running HAProxy without UBSan (sanitization) will lead to out-of-bounds memeory access downstream due to the corrupted **nlen** variable which is being used in later operations and thus can lead to DoS, heap corruption, information disclosure, or even possibly RCE using heap feng shui + modern bypass technique.
+Running HAProxy without UBSan (sanitization) will lead to out-of-bounds memory access downstream due to the corrupted **nlen** variable which is being used in later operations and thus can lead to DoS, heap corruption, information disclosure, or even possibly RCE using heap feng shui + modern bypass technique.
 
 ```c
 name = ist2(raw, nlen);  // Creates string view with WRONG length
