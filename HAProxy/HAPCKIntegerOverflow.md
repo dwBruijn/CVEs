@@ -26,6 +26,8 @@ The **get_var_int()** function in `/src/hpack-dec.c` is vulnerable to integer ov
 
 ## PoC
 
+Note: I'm compiling HAProxy with UBSan enabled, but in production that's not usually the case so there won't be any active sanitization to detect an unbounded left shift. 
+
 The vulnerability is in the unbounded left shift operations with no validation that `shift` remains within safe bounds for a 32-bit integer.
 
 ### Vulnerable Code (`src/hpack-dec.c:55-87`)
