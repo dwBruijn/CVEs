@@ -376,5 +376,5 @@ def upload_image():
 - Content management systems
 - Email attachments processing
 
-## Why is this dangerous
-This is only dangerous because PIllow is widely deployed and this vulnerability opens Pillow up to asymmetric resource consumption. The attack can be performed with very low resources on the attacker's side and if abused can trick Pillow into allocating very large chunks of memory triggered by very tiny BMP image uploads. 
+## Why is this dangerous?
+This is only dangerous because PIllow is widely deployed and this vulnerability opens Pillow up to asymmetric resource consumption. The attack can be performed with very low resources on the attacker's side and if abused can trick Pillow into allocating very large chunks of memory triggered by very tiny BMP image uploads which leads to service degradation and DoS due to excessive memory consumption
