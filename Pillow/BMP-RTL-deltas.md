@@ -1,4 +1,4 @@
-# Pillow BMP RLE Delta Asymmetric Memory Consumption via a Tiny Crafted BMP File
+# Pillow BMP RLE Decoder Asymmetric Memory Consumption via a Tiny Crafted BMP File
 
 ## Description
 
