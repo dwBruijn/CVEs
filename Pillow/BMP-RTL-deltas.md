@@ -1,8 +1,8 @@
-# Pillow BMP RLE Delta Memory consumption via a tiny crafted BMP file
+# Pillow BMP RLE Delta Asymmetric Memory Consumption via a Tiny Crafted BMP File
 
 ## Description
 
-The **BmpRleDecoder** class in `/src/PIL/BmpImagePlugin.py` is vulnerable to unchecked memory allocation due to the complete absence of bounds checking on RLE delta command offset calculations. The decoder performs memory allocation with attacker-controlled dimensions (`right + up * width`) without validating that the allocation stays within reasonable bounds, resulting in **massive memory exhaustion** (163,000x amplification) which if abused can lead to denial of service. The vulnerability **bypasses Pillow's MAX_IMAGE_PIXELS decompression bomb protection** as the protection only validates im≠age dimensions but not RLE operation allocations. The attack can be performed remotely via any image upload endpoint that processes BMP files using Pillow.
+The **BmpRleDecoder** class in `/src/PIL/BmpImagePlugin.py` is vulnerable to unchecked memory allocation due to the complete absence of bounds checking on RLE delta command offset calculations. The decoder performs memory allocation with attacker-controlled dimensions (`right + up * width`) without validating that the allocation stays within reasonable bounds, resulting in **massive memory exhaustion** (163,000x amplification) which if abused can lead to denial of service. The vulnerability **bypasses Pillow's MAX_IMAGE_PIXELS decompression bomb protection** as the protection only validates image dimensions but not RLE operation allocations. The attack can be performed remotely via any image upload endpoint that processes BMP files using Pillow.
 
 ## Details
 
@@ -343,7 +343,7 @@ Amplification: 163,046x
 ======================================================================
 ```
 
-![Vulnerability Confirmation](verification_output.png)
+![PoC](../resources/imgs/Pillow/BMP-RTL-Deltas-PoC.png)
 
 ## Potential Impact
 
@@ -375,3 +375,6 @@ def upload_image():
 - Thumbnail generation APIs
 - Content management systems
 - Email attachments processing
+
+## Why is this dangerous
+This is only dangerous because PIllow is widely deployed and this vulnerability opens Pillow up to asymmetric resource consumption. The attack can be performed with very low resources on the attacker's side and if abused can trick Pillow into allocating very large chunks of memory triggered by very tiny BMP image uploads. 
