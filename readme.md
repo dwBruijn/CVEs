@@ -4,6 +4,11 @@ This repo contains my recent CVEs/publically disclosed vulnerabilities (usually 
 
 I always follow a responsible disclosure policy to avoid any unintended harm to end users.
 
+## DataDog's GaurdDog
+
+* CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-ffj4-jq7m-9g6v)
+* CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-xg9w-vg3g-6m68)
+
 ## Tenda
 
 * CVE-2025-15230 [VulDB](https://vuldb.com/?id.338626)
