@@ -1,4 +1,4 @@
-# Datadog's GuardDog safe_extract mishadling of highly compressed files leads to resource exhaustion and DoS
+# Datadog's GuardDog safe_extract mishandling of highly compressed files leads to resource exhaustion and DoS
 
 ## Description
 
@@ -10,7 +10,7 @@ GuardDog's safe_extract() function does not validate decompressed file sizes whe
 
 *   **Product**: GuardDog
 
-*   **Firmware Version**: v2.7.0
+*   **Version**: v2.7.0
 
 *   **Repository's URL**: https://github.com/DataDog/guarddog
 

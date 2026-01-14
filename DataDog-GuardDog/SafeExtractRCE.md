@@ -10,7 +10,7 @@ A path traversal vulnerability exists in GuardDog's `safe_extract()` function th
 
 *   **Product**: GuardDog
 
-*   **Firmware Version**: v2.7.0
+*   **Version**: v2.7.0
 
 *   **Repository's URL**: https://github.com/DataDog/guarddog
 
