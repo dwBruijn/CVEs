@@ -20,7 +20,7 @@ The **BmpRleDecoder** class in `/src/PIL/BmpImagePlugin.py` is vulnerable to unc
     * Memory Allocation with Excessive Size Value (CWE-789)
     * Improper Input Validation (CWE-20)
 
-*   **CVE ID**: Not Assigned
+*   **CVE ID**: Requested
 
 *   **Reported by**: Charbel
 
