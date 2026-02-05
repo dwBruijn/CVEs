@@ -9,6 +9,11 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 * CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-ffj4-jq7m-9g6v)
 * CVE-2026-22871 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-xg9w-vg3g-6m68)
 
+## TP-Link
+
+* CVE-2026-22225 (Being tracked under this CVE ID for consistent tracking, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't avilable yet)
+* CVE-2026-0630 (Being tracked under this CVE ID for consistent tracking, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't available yet)
+
 ## Tenda
 
 * CVE-2025-15230 [VulDB](https://vuldb.com/?id.338626)
