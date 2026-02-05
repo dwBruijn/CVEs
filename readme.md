@@ -11,8 +11,8 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 
 ## TP-Link
 
-* CVE-2026-22225 (Being tracked under this CVE ID for consistent tracking, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't avilable yet)
-* CVE-2026-0630 (Being tracked under this CVE ID for consistent tracking, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't available yet)
+* CVE-2026-22225 (Being tracked under this CVE ID for consistent tracking with other vulnerable devices, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't avilable yet)
+* CVE-2026-0630 (Being tracked under this CVE ID for consistent tracking with other vulnerable devices, but the advisory for AXE75 hasn't been published yet and a patched firmware version isn't available yet)
 
 ## Tenda
 
