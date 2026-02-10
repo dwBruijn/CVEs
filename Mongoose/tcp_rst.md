@@ -3,7 +3,7 @@
 ## Description
 
 The built-in TCP/IP stack (MIP) in Mongoose accepts TCP RST packets without validating the source IP address or the sequence number thus allowing an attacker to terminate arbitrary TCP sessions. 
-The `getpeer()` function in `/src/net_builtin.c` matches incoming TCP segments to existing connections using **only the port pair** (source port, destination port), ignoring the source IP address entirely. Once a connection is matched, the `rx_tcp()` function immediately terminates the connection upon seeing the RST flag without checking whether the segment's sequence number falls within the valid receive window. This violates RFC 5961 (Improving TCP's Robustness to Blind In-Window Attacks) and allows any host on the network -- not just the legitimate peer -- to terminate arbitrary TCP connections by sending a single forged RST packet with the correct port pair and any source IP or sequence number.
+The `getpeer()` function in `/src/net_builtin.c` matches incoming TCP segments to existing connections using **only the port pair** (source port, destination port), ignoring the source IP address entirely. Once a connection is matched, the `rx_tcp()` function immediately terminates the connection upon seeing the RST flag without checking whether the segment's sequence number falls within the valid receive window. This violates RFC 5961 (Improving TCP's Robustness to Blind In-Window Attacks) and allows any host on the network to terminate arbitrary TCP connections by sending a single forged RST packet with the correct port pair and any source IP or sequence number.
 
 ## Details
 
