@@ -10,7 +10,7 @@ The **mg_sendnsreq()** function in `/src/dns.c` generates DNS transaction IDs us
 
 *   **Product**: Mongoose Embedded Web Server / Networking Library
 
-*   **Affected Version**: cc617d53 (current master, and likely all prior versions)
+*   **Affected Version**: 7.20 (and likely all prior versions)
 
 *   **Source Repository**: https://github.com/cesanta/mongoose
 
