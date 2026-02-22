@@ -4,6 +4,11 @@ This repo contains my recent CVEs/publically disclosed vulnerabilities (usually 
 
 I always follow a responsible disclosure policy to avoid any unintended harm to end users.
 
+## Cesanta's Mongoose
+
+* CVE-2026-2966 [VulDB](https://vuldb.com/?id.347333)
+* CVE-2026-2967 [VulDB](https://vuldb.com/?id.347334)
+* CVE-2026-2968 [VulDB](https://vuldb.com/?id.347335)
 ## Datadog's GuardDog
 
 * CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-ffj4-jq7m-9g6v)

@@ -450,6 +450,6 @@ When using Mongoose's built-in network stack (`net_builtin.c`), the vulnerabilit
 
 1.  **Sequential ephemeral source ports** (`net_builtin.c:2025`): DNS query source ports are assigned from a sequential counter starting at `MG_EPHEMERAL_PORT_BASE`, reducing the source port entropy to zero as well. Combined with the constant txnid, the attacker can perform **blind off-path DNS spoofing** without needing to observe any traffic or be on the same network segment.
 
-2.  **Deterministic TCP ISNs** (`net_builtin.c:2005-2008`): TCP Initial Sequence Numbers are derived from the ephemeral port number, meaning that after a successful DNS spoof redirects a TCP connection to the attacker, the ISN is also predictable -- enabling further attacks on the TCP session.
+2.  **Deterministic TCP ISNs** (`net_builtin.c:2005-2008`): TCP Initial Sequence Numbers are derived from the ephemeral port number, meaning that after a successful DNS spoof redirects a TCP connection to the attacker, the ISN is also predictable, thus enabling further attacks on the TCP session.
 
-These three vulnerabilities together (constant DNS txnid + sequential source ports + deterministic ISNs) mean that the entire connection establishment path -- from DNS resolution through TCP handshake -- has effectively **zero cryptographic or probabilistic protection** against spoofing.
+These three vulnerabilities together (constant DNS txnid + sequential source ports + deterministic ISNs) mean that the entire connection establishment path, from DNS resolution through TCP handshake, has effectively **zero cryptographic or probabilistic protection** against spoofing.
