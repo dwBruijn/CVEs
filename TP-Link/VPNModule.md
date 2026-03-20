@@ -6,7 +6,7 @@ A command injection vulnerability exists in the `/admin/vpnconn?form=config` end
 
 *   **Vendor**: TP-Link
 
-*   **Product**: Archer AXE75 Firmware
+*   **Product**: Archer AXE Series Firmware
 
 *   **Vulnerability Type**:
     * CWE-78: Improper Neutralization of Special Elements used in an OS Command

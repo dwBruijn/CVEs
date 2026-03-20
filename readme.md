@@ -9,6 +9,7 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 * CVE-2026-2966 [VulDB](https://vuldb.com/?id.347333)
 * CVE-2026-2967 [VulDB](https://vuldb.com/?id.347334)
 * CVE-2026-2968 [VulDB](https://vuldb.com/?id.347335)
+
 ## Datadog's GuardDog
 
 * CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-ffj4-jq7m-9g6v)
@@ -16,8 +17,8 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 
 ## TP-Link
 
-* CVE-2026-22225 (Being tracked under this CVE ID for consistent tracking with other vulnerable devices, but the advisory and patched firmware version for AXE75 haven't been published yet)
-* CVE-2026-0630 (Being tracked under this CVE ID for consistent tracking with other vulnerable devices, but the advisory and patched firmware version for AXE75 haven't been published yet)
+* CVE-2026-0630 [MITRE](https://www.cve.org/cverecord?id=CVE-2026-0630)
+* CVE-2026-22225 [MITRE](https://www.cve.org/cverecord?id=CVE-2026-22225)
 
 ## Tenda
 
