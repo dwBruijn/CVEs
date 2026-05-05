@@ -22,7 +22,7 @@ This vulnerability is triggered in the initial frame receive path of `mg_mgr_pol
     * Loop with Unreachable Exit Condition (CWE-835)
     * Out-of-bounds Read (CWE-125)
 
-*   **CVE ID**: Reported to Cesanta
+*   **CVE ID**: CVE-2026-6985
 
 *   **Reported by**: dwbruijn
 

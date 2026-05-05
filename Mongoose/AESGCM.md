@@ -20,7 +20,7 @@ The `mg_aes_gcm_decrypt()` function in `/src/tls_aes128.c` never verifies the GC
     * Improper Verification of Cryptographic Signature (CWE-347)
     * Missing Required Cryptographic Step (CWE-325)
 
-   **CVE ID**: Reported to Cesanta
+   **CVE ID**: CVE-2026-6986
 
 *   **Reported by**: dwbruijn
 

@@ -9,6 +9,8 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 * CVE-2026-2966 [VulDB](https://vuldb.com/?id.347333)
 * CVE-2026-2967 [VulDB](https://vuldb.com/?id.347334)
 * CVE-2026-2968 [VulDB](https://vuldb.com/?id.347335)
+* CVE-2026-6985 [VulDB](https://vuldb.com/vuln/359528)
+* CVE-2026-6986 [VulDB](https://vuldb.com/vuln/359529)
 
 ## Datadog's GuardDog
 
