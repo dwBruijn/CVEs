@@ -135,6 +135,6 @@ if __name__ == '__main__':
 ```
 python3 tiff_wang.py
 ```
-Open the generated .tif file (wang_trigger.tif) in IrfanView. That should lead to a crash. We can see the resulting Access Violation (windbg):
+Open the generated .tif file (wang_trigger.tif) in IrfanView: File -> Open.... That should lead to a crash. We can see the resulting Access Violation (windbg):
 
 ![Crash](../../resources/imgs/IrfanView/crash.png)
