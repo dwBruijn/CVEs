@@ -2,7 +2,7 @@
 
 ## Description
 
-IrfanView's TIFF loader can be told to parse an embedded "Wang annotation" record which is a legacy scanned-document annotation format identified by TIFF tag 32932. The record carries its own 4-byte length field for a text payload. That length is used to size a heap allocation and to determine the size of a subsequent read into it. The issue is that the two uses of the 4-byte length disagree due to interger overflow: a length of 0xFFFFFFFF makes the allocation zero bytes while the read still tries to copy up to 4 GB of data into it. The attacker can control how much data is written regardless of the interger overflow's result. In other words, the attacker is not forced to write 4 GB of data.
+IrfanView's TIFF loader can be told to parse an embedded "Wang annotation" record which is a legacy scanned-document annotation format identified by TIFF tag 32932. The record carries its own 4-byte length field for a text payload. That length is used to size a heap allocation and to determine the size of a subsequent read into it. The issue is that the two uses of the 4-byte length disagree due to integer overflow: a length of 0xFFFFFFFF makes the allocation zero bytes while the read still tries to copy up to 4 GB of data into it. The attacker can control how much data is written regardless of the integer overflow's result. In other words, the attacker is not forced to write 4 GB of data. The attacker fully control's the overflow's length and content.
 
 ## Product and Version
 
