@@ -6,6 +6,7 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 
 ## Cesanta's Mongoose
 
+* ZDI-CAN-29386 Upcoming advisory on [ZDI](https://www.zerodayinitiative.com/advisories/upcoming/)
 * CVE-2026-2966 [VulDB](https://vuldb.com/?id.347333)
 * CVE-2026-2967 [VulDB](https://vuldb.com/?id.347334)
 * CVE-2026-2968 [VulDB](https://vuldb.com/?id.347335)
