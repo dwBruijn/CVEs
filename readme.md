@@ -13,6 +13,9 @@ I always follow a responsible disclosure policy to avoid any unintended harm to 
 * CVE-2026-6985 [VulDB](https://vuldb.com/vuln/359528)
 * CVE-2026-6986 [VulDB](https://vuldb.com/vuln/359529)
 
+## IrfanView
+* CVE-2026-121517 [MITRE](https://www.cve.org/CVERecord?id=CVE-2026-121517)
+
 ## Datadog's GuardDog
 
 * CVE-2026-22870 [Github Advisory](https://github.com/DataDog/guarddog/security/advisories/GHSA-ffj4-jq7m-9g6v)
