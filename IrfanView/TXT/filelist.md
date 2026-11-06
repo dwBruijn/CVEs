@@ -74,7 +74,7 @@ Write-Output "Wrote $OutFile ($((Get-Item $OutFile).Length) bytes)"
 Here are the steps to trigger the vulnerability using the PoC .txt file:  
 1. Launch IrfanView normally
 2. File → Slideshow... to open the Slideshow dialog.
-3. Click the load-from-TXT button ("Load filenames from TXT file").
+3. Click "Load filenames from TXT file".
 
 ![Crash](../../resources/imgs/IrfanView/gate1.png)
 
