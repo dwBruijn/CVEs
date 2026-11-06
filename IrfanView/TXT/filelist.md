@@ -59,7 +59,7 @@ How far past the stack cookie a single line reaches is bounded, and the bound is
 
 ## PoC
 
-The PoC below generates a .txt file (poc_filelist.tif) which triggers this vulnerability when loaded in.
+The scruot below generates a PoC .txt file (poc_filelist.tif) which triggers this vulnerability when loaded in.
 
 ```
 param([string]$OutFile = ".\poc_filelist.txt")
@@ -71,8 +71,8 @@ Write-Output "Wrote $OutFile ($((Get-Item $OutFile).Length) bytes)"
 
 ### Run
 
-Here are the steps to trigger the vulnerability using the PoC txt file:  
-1. Launch IrfanView normally,
+Here are the steps to trigger the vulnerability using the PoC .txt file:  
+1. Launch IrfanView normally
 2. File → Slideshow... to open the Slideshow dialog.
 3. Click the load-from-TXT button ("Load filenames from TXT file").
 
